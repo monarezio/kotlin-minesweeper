@@ -1,6 +1,7 @@
 package net.monarezio.domain.minesweeper
 
 import net.monarezio.domain.minesweeper.models.Coordinate
+import net.monarezio.domain.minesweeper.models.Field
 
 /**
  * Created by monarezio on 08/07/2017.
@@ -26,4 +27,14 @@ interface Minesweeper {
      * returns the positions of all bombs
      */
     fun getBombPositions(): Set<Coordinate>
+
+    /**
+     * returns the position of every tagged/visible coordinate
+     */
+    fun getFields(): List<List<Field>>
+
+    /**
+     * makes the move
+     */
+    fun move(x: Int, y: Int): Minesweeper
 }

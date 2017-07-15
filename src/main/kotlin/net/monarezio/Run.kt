@@ -1,8 +1,9 @@
 package net.monarezio
 
 import javafx.application.Application
+import javafx.scene.text.Font
 import javafx.stage.Stage
-import net.monarezio.presentation.Minesweeper
+import net.monarezio.presentation.minesweeper.Minesweeper
 import tornadofx.*
 
 /**
@@ -16,7 +17,7 @@ class Run: App(Minesweeper::class) {
     }
 
     init {
-
+        Font.loadFont(Run::class.java.getResource("/fonts/FontAwesome.otf").toExternalForm(), 10.0)
     }
 
     companion object {
