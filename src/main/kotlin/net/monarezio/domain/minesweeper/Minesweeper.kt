@@ -16,7 +16,7 @@ interface Minesweeper {
     /**
      * returns the number of bombs around the position
      */
-    fun getAmountOfBombsAround(x: Int, y: Int): Int
+    fun getValue(x: Int, y: Int): Int
 
     /**
      * returns amount of bombs on the field
@@ -37,4 +37,9 @@ interface Minesweeper {
      * makes the move
      */
     fun move(x: Int, y: Int): Minesweeper
+
+    /**
+     * returns true if game is over
+     */
+    fun isGameOver(): Boolean
 }

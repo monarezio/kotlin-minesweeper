@@ -40,11 +40,11 @@ class Minesweeper : View("Minesweeper"), ClickListener {
             style { minHeight = 4.px } //I have no idea how to make a margin on this thing ffs TODO
         }
 
-        grid.render(controller.getFields())
+        grid.render(controller.getDomain())
     }
 
     override fun onClick(x: Int, y: Int) {
         controller.onMove(x, y)
-        grid.render(controller.getFields())
+        grid.render(controller.getDomain())
     }
 }
