@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt" line="50" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="17d33ed9-80df-43e4-b79b-3906be7507dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/META-INF/minesweeper_main.kotlin_module" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/minesweeper.iml" afterPath="$PROJECT_DIR$/.idea/modules/minesweeper.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/MinesweeperModel.kt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/minesweeper_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/minesweeper_main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/minesweeper_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/minesweeper_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/Run.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/Run.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt" />
     </list>
@@ -39,24 +41,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MinesweeperPane.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/MinesweeperPane.kt">
+      <file leaf-file-name="Minesweeper.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="327">
+              <caret line="100" column="44" lean-forward="true" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
+              <folding>
+                <element signature="e#48#477#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Minesweeper.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt">
+      <file leaf-file-name="Dialogs.kt" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Dialogs.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding>
-                <element signature="e#48#291#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="218">
+              <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,20 +66,18 @@
       <file leaf-file-name="Run.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/Run.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-              <folding>
-                <element signature="e#23#251#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="107">
+              <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinesweeperController.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MinesweeperController.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="503">
+              <caret line="50" column="80" lean-forward="false" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="80" />
               <folding>
                 <element signature="e#48#288#0" expanded="true" />
               </folding>
@@ -85,21 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Component.kt" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Component.kt">
+      <file leaf-file-name="MinesweeperModel.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/MinesweeperModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="150" column="97" lean-forward="true" selection-start-line="150" selection-start-column="97" selection-end-line="150" selection-end-column="97" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="5" column="82" lean-forward="false" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+              <folding>
+                <element signature="e#55#125#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Size.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt">
+      <file leaf-file-name="Minesweeper.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="593">
+              <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -108,8 +110,8 @@
       <file leaf-file-name="Game.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+            <state relative-caret-position="476">
+              <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -121,10 +123,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TornadoFX Code View" />
-        <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="Kotlin File" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -328,8 +330,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4527570290000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3544391374" />
+        <entry key="$PROJECT_DIR$" value="4527593675000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="394496475" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="829777938" />
       </map>
     </option>
@@ -545,17 +547,19 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/ClickListener.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperPresenter.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/common/extension/List.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/Field.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/values/AppColor.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/MinesweeperPane.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/Launcher.kt" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/LoadState.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/Run.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/MinesweeperModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt" />
       </list>
     </option>
   </component>
@@ -670,6 +674,17 @@
               <item name="monarezio" type="462c0819:PsiDirectoryNode" />
               <item name="presentation" type="462c0819:PsiDirectoryNode" />
               <item name="minesweeper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="minesweeper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlin-minesweeper" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="monarezio" type="462c0819:PsiDirectoryNode" />
+              <item name="presentation" type="462c0819:PsiDirectoryNode" />
+              <item name="minesweeper" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="minesweeper" type="b2602c69:ProjectViewProjectNode" />
@@ -1215,12 +1230,12 @@
       <workItem from="1500014038933" duration="11157000" />
       <workItem from="1509189914246" duration="206000" />
       <workItem from="1509190137561" duration="1250000" />
-      <workItem from="1509203583385" duration="4850000" />
+      <workItem from="1509203583385" duration="14514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42176000" />
+    <option name="totallyTimeSpent" value="51840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-37" width="1920" height="1117" extended-state="0" />
@@ -1234,7 +1249,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1273,36 +1288,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/common/utils/SetUtil.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/common/extension/playground/IntPl.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/common/extension/playground/GamePl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1322,7 +1307,7 @@
         <state relative-caret-position="165">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
-            <element signature="e#23#251#0" expanded="true" />
+            <element signature="e#23#308#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1332,7 +1317,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#48#291#0" expanded="true" />
+            <element signature="e#48#477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1387,7 +1372,7 @@
         <state relative-caret-position="165">
           <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
-            <element signature="e#23#251#0" expanded="true" />
+            <element signature="e#23#308#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1412,7 +1397,7 @@
         <state relative-caret-position="225">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#23#251#0" expanded="true" />
+            <element signature="e#23#308#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1422,7 +1407,7 @@
         <state relative-caret-position="240">
           <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#48#291#0" expanded="true" />
+            <element signature="e#48#477#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1500,14 +1485,6 @@
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3/9ce3451736c75af001cc62806f36c087d70c403b/kotlin-stdlib-1.1.3-sources.jar!/generated/_Collections.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/Field.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1532,50 +1509,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Nodes.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="1074" column="20" lean-forward="true" selection-start-line="1074" selection-start-column="20" selection-end-line="1074" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3/9ce3451736c75af001cc62806f36c087d70c403b/kotlin-stdlib-1.1.3-sources.jar!/kotlin/properties/Interfaces.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Component.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="150" column="97" lean-forward="true" selection-start-line="150" selection-start-column="97" selection-end-line="150" selection-end-column="97" />
           <folding />
         </state>
       </provider>
@@ -1588,48 +1525,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/Launcher.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Nodes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="1078" column="9" lean-forward="false" selection-start-line="1078" selection-start-column="9" selection-end-line="1078" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Component.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="720" column="34" lean-forward="true" selection-start-line="720" selection-start-column="34" selection-end-line="720" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/stage/FileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2167">
+          <caret line="93" column="47" lean-forward="true" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/LoadState.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Minesweeper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/domain/minesweeper/Game.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/Size.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/no.tornado/tornadofx/1.7.8/8237ec3abe647844891cbda81b3e9f0852fbfa2d/tornadofx-1.7.8-sources.jar!/tornadofx/Dialogs.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/models/MinesweeperModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="82" lean-forward="false" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
+          <folding>
+            <element signature="e#55#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/custom/MinesweeperPane.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
+        <state relative-caret-position="-559">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/Launcher.kt">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="432">
+          <caret line="24" column="69" lean-forward="false" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/Run.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="107">
+          <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="50" column="80" lean-forward="false" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="80" />
           <folding>
-            <element signature="e#23#251#0" expanded="true" />
+            <element signature="e#48#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/Minesweeper.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="327">
+          <caret line="100" column="44" lean-forward="true" selection-start-line="100" selection-start-column="44" selection-end-line="100" selection-end-column="44" />
           <folding>
-            <element signature="e#48#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/net/monarezio/presentation/minesweeper/MinesweeperController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding>
-            <element signature="e#48#288#0" expanded="true" />
+            <element signature="e#48#477#0" expanded="true" />
           </folding>
         </state>
       </provider>

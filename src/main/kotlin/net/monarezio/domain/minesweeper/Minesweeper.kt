@@ -42,4 +42,9 @@ interface Minesweeper {
      * returns true if game is over
      */
     fun isGameOver(): Boolean
+
+    /**
+     * returns true if there are no bombs
+     */
+    fun isEmpty(): Boolean
 }

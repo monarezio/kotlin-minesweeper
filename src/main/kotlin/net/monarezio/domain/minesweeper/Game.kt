@@ -13,7 +13,7 @@ class Game private constructor(
         private val bombs: Set<Coordinate>,
        private val size: Int,
        private val fields: List<List<Field>> = 0.rangeTo(size).map { 0.rangeTo(size).map { Field.HIDDEN } }
-) : ViewModel(), Minesweeper {
+): Minesweeper {
 
     override fun getSize(): Int = size
 
@@ -44,9 +44,13 @@ class Game private constructor(
 
     override fun isGameOver(): Boolean = !bombs.all { i -> fields[i.x][i.y] != Field.VISIBLE }
 
+    override fun isEmpty() = bombs.isEmpty()
+
     private fun isInFieldAndIsHidden(x: Int, y: Int) = (x >= 0 && x <= size && y >= 0 && y <= size) && fields[x][y] == Field.HIDDEN
 
     companion object {
         fun createNewGame(size: Int, bombCount: Int): Minesweeper = Game(SetUtil.instance.getRandomCoordinates(bombCount - 1, 0, size - 1), size)
+
+        fun createEmpty() = Game(setOf(), 0)
     }
 }
