@@ -32,8 +32,7 @@ class Game private constructor(
     override fun getFields(): List<List<Field>> = fields
 
     override fun move(x: Int, y: Int): Minesweeper {
-        var tmpGame: Minesweeper = this
-        tmpGame = Game(bombs, size, fields.set(x, y, Field.VISIBLE))
+        var tmpGame: Minesweeper = Game(bombs, size, fields.set(x, y, Field.VISIBLE))
         if(getValue(x, y) == 0) {
             if(isInFieldAndIsHidden(x + 1, y)) tmpGame = tmpGame.move(x + 1, y)
             if(isInFieldAndIsHidden(x - 1, y)) tmpGame = tmpGame.move(x - 1, y)

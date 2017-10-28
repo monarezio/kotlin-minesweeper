@@ -1,7 +1,9 @@
 package net.monarezio.presentation.minesweeper
 
+import javafx.stage.StageStyle
 import net.monarezio.presentation.minesweeper.custom.ClickListener
 import net.monarezio.presentation.minesweeper.custom.MinesweeperPane
+import net.monarezio.presentation.minesweeper.models.Size
 import tornadofx.*
 
 /**
@@ -24,7 +26,12 @@ class Minesweeper : View("Minesweeper"), ClickListener {
             menu("Game") {
                 item("New", "Ctrl + N")
                 menu("Presets") {
-                    item("5x5")
+                    item("5x5").action {
+                        val scope = Scope()
+                        setInScope(Size(5), scope)
+                        find<Minesweeper>(scope).openModal()
+                        close()
+                    }
                     item("10x10")
                     item("25x25")
                 }

@@ -4,6 +4,7 @@ import javafx.application.Application
 import javafx.scene.text.Font
 import javafx.stage.Stage
 import net.monarezio.presentation.minesweeper.Minesweeper
+import net.monarezio.presentation.minesweeper.models.Size
 import tornadofx.*
 
 /**
@@ -18,6 +19,7 @@ class Run: App(Minesweeper::class) {
 
     init {
         Font.loadFont(Run::class.java.getResource("/fonts/FontAwesome.otf").toExternalForm(), 10.0)
+        setInScope(Size(10), DefaultScope)
     }
 
     companion object {
