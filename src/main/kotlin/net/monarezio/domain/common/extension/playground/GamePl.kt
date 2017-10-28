@@ -7,7 +7,5 @@ import net.monarezio.domain.minesweeper.Game
  */
 
 fun main(args: Array<String>) {
-    val game = Game.createNewGame(10, 4)
 
-    println(game.getBombPositions())
 }

@@ -6,7 +6,7 @@ import net.monarezio.domain.minesweeper.models.Field
 /**
  * Created by monarezio on 08/07/2017.
  */
-interface Minesweeper {
+interface Minesweeper: TimeListener {
 
     /**
      * gets the amount of one row/column
@@ -39,12 +39,28 @@ interface Minesweeper {
     fun move(x: Int, y: Int): Minesweeper
 
     /**
+     * makes the secondary move
+     */
+    fun secondaryMove(x: Int, y: Int): Minesweeper
+
+    /**
      * returns true if game is over
      */
     fun isGameOver(): Boolean
 
     /**
+     * returns if the player has won
+     */
+    fun hasWon(): Boolean
+
+    /**
      * returns true if there are no bombs
      */
     fun isEmpty(): Boolean
+
+    /**
+     * get the current time in seconds
+     */
+    fun getCurrentTime(): Int
+
 }

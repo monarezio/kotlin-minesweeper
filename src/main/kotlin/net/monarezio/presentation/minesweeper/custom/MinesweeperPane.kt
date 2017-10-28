@@ -67,8 +67,8 @@ class MinesweeperPane (private val listener: ClickListener): GridPane() {
                                     textFill = AppColor.HIDDEN_FIELD
                             }
 
-                        setOnMouseClicked {
-                            listener.onClick(i, j)
+                        setOnMouseClicked { event ->
+                            listener.onClick(event, i, j)
                         }
                     }
                 }

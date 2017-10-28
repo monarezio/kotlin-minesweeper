@@ -2,6 +2,6 @@
 Minesweeper implementation in kotlin
 
 ## Todo:
-- [ ] Domain layer
+- [x] Domain layer
 - [ ] Presentation layer
 - [ ] Implement highscore

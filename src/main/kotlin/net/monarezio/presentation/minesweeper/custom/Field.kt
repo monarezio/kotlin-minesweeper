@@ -7,7 +7,8 @@ package net.monarezio.presentation.minesweeper.custom
  */
 object Field  {
     val BOMB = "\uF1E2"
-    val FLAG = "\uF024"
+    //val FLAG = "\uF11D"
+    val FLAG = "P"
     val EMPTY = "\uF04D"
     val QUESTION = "\uF128"
 }

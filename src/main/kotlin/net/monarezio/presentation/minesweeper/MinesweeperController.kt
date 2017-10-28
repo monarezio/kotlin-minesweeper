@@ -1,6 +1,8 @@
 package net.monarezio.presentation.minesweeper
 
 import com.google.gson.GsonBuilder
+import javafx.scene.input.MouseButton
+import javafx.scene.input.MouseEvent
 import net.monarezio.domain.minesweeper.Game
 import net.monarezio.domain.minesweeper.Minesweeper
 import net.monarezio.presentation.minesweeper.models.MinesweeperModel
@@ -19,9 +21,12 @@ open class MinesweeperController: Controller() {
 
     private var areChanges = false
 
-    fun onMove(x: Int, y: Int) {
+    fun onMove(event: MouseEvent, x: Int, y: Int) {
         if(!domain.isGameOver()) {
-            domain = domain.move(x, y)
+            if(event.button == MouseButton.PRIMARY)
+                domain = domain.move(x, y)
+            else
+                domain = domain.secondaryMove(x, y)
             areChanges = false
         }
     }

@@ -1,6 +1,7 @@
 package net.monarezio
 
 import javafx.application.Application
+import javafx.application.Platform
 import javafx.scene.text.Font
 import javafx.stage.Stage
 import net.monarezio.domain.minesweeper.Game
