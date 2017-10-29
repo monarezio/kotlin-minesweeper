@@ -11,10 +11,9 @@ import net.monarezio.domain.minesweeper.models.Field
 class Game private constructor(
         private val bombs: Set<Coordinate>,
        private val size: Int,
-       private val fields: List<List<Field>> = 0.rangeTo(size).map { 0.rangeTo(size).map { Field.HIDDEN } }
+       private val fields: List<List<Field>> = 0.rangeTo(size).map { 0.rangeTo(size).map { Field.HIDDEN } },
+        private var seconds: Int = 0
 ): Minesweeper {
-
-    private var seconds: Int = 0
 
     override fun getSize(): Int = size
 
@@ -35,7 +34,7 @@ class Game private constructor(
     override fun move(x: Int, y: Int): Minesweeper {
         if(fields[x][y] != Field.HIDDEN)
             return this
-        var tmpGame: Minesweeper = Game(bombs, size, fields.set(x, y, Field.VISIBLE))
+        var tmpGame: Minesweeper = Game(bombs, size, fields.set(x, y, Field.VISIBLE), seconds)
         if(getValue(x, y) == 0) {
             if(isInFieldAndIsHidden(x + 1, y)) tmpGame = tmpGame.move(x + 1, y)
             if(isInFieldAndIsHidden(x - 1, y)) tmpGame = tmpGame.move(x - 1, y)
@@ -47,7 +46,7 @@ class Game private constructor(
 
     override fun secondaryMove(x: Int, y: Int): Minesweeper {
         if(fields[x][y] != Field.VISIBLE)
-            return Game(bombs, size, fields.set(x, y, fields[x][y].toggle()))
+            return Game(bombs, size, fields.set(x, y, fields[x][y].toggle()), seconds)
         return this
     }
 

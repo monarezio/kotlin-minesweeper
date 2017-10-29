@@ -3,5 +3,5 @@ Minesweeper implementation in kotlin
 
 ## Todo:
 - [x] Domain layer
-- [ ] Presentation layer
-- [ ] Implement highscore
+- [x] Presentation layer
+- [x] Implement saving mechanism 

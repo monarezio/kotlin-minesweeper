@@ -4,18 +4,20 @@ import javafx.animation.Animation
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.event.EventHandler
+import javafx.geometry.Pos
 import javafx.scene.control.Alert
 import javafx.scene.control.ButtonType
 import javafx.scene.input.MouseEvent
+import javafx.scene.layout.Priority
+import javafx.scene.paint.Color
 import javafx.stage.FileChooser
-import javafx.util.Duration
 import net.monarezio.domain.minesweeper.Game
 import net.monarezio.presentation.minesweeper.custom.ClickListener
 import net.monarezio.presentation.minesweeper.custom.MinesweeperPane
 import net.monarezio.presentation.minesweeper.models.MinesweeperModel
+import net.monarezio.presentation.values.AppColor
 import tornadofx.*
 import java.io.File
-import java.time.Duration.ofMillis
 
 
 /**
@@ -27,10 +29,58 @@ class Minesweeper : View("Minesweeper"), ClickListener {
 
     private val grid: MinesweeperPane = MinesweeperPane(this)
 
+    private val timer = label {
+        text = "Played: " + controller.getDomain().getCurrentTime().toString() + "s"
+        val timeline = Timeline(KeyFrame(1.seconds, EventHandler {
+            if (!controller.getDomain().isGameOver())
+                controller.getDomain().onNewInterval()
+            text = "Played: " + controller.getDomain().getCurrentTime().toString() + "s"
+        }))
+        timeline.cycleCount = Animation.INDEFINITE
+        timeline.play()
+    }
+
+    private val smiley = label {
+        style(true) {
+            fontFamily = "FontAwesome"
+            fontSize = 30.px
+        }
+
+        setOnMouseClicked {
+            newGame(controller.getDomain().getSize())
+        }
+
+        if(!controller.getDomain().isGameOver()) {
+            text = "\uF164"
+
+            style(true) {
+                textFill = AppColor.GOOD
+            }
+        }
+        else if(controller.getDomain().hasWon()) {
+            text = "\uF004"
+
+            style(true) {
+                textFill = Color.RED
+            }
+        }
+        else {
+            text = "\uF119"
+
+            style(true) {
+                textFill = AppColor.BOMB
+            }
+        }
+    }
+
+    private val bombCount = label {
+        text = "Bombs: " + controller.getDomain().getAmountOfBombs()
+    }
+
     override val root = vbox {
         menubar {
             menu("File") {
-                item("Save", "Ctrl + S").action {
+                item("Save").action {
                     if(controller.filePath.isBlank())
                         controller.saveState(chooseFile("Save", arrayOf(FileChooser.ExtensionFilter("Minesweeper save file (*.mnp)", "*.mnp")), FileChooserMode.Save) {
                             initialDirectory = File(System.getProperty("user.home"))
@@ -51,12 +101,12 @@ class Minesweeper : View("Minesweeper"), ClickListener {
                         }
                     }
                 }
-                item("Exit", "Alt + F4").action {
+                item("Exit").action {
                     onCloseHandle()
                 }
             }
             menu("Game") {
-                item("New", "Ctrl + N").action {
+                item("New").action {
                     dialog("New Game") {
                         val textField = textfield(controller.getDomain().getSize().toString())
                         fieldset {
@@ -90,15 +140,23 @@ class Minesweeper : View("Minesweeper"), ClickListener {
             }
         }
 
-        label {
-            text = controller.getDomain().getCurrentTime().toString()
-            val timeline = Timeline(KeyFrame(1.seconds, EventHandler {
-                controller.getDomain().onNewInterval()
-                text = controller.getDomain().getCurrentTime().toString()
-            }))
-            timeline.cycleCount = Animation.INDEFINITE
-            timeline.play()
-        }
+        toolbar(
+            hbox {
+
+                alignment = Pos.CENTER
+
+                style {
+                    fontSize = 13.px
+                }
+
+                hgrow = Priority.ALWAYS
+                spacing = 10.0
+
+                this += timer
+                this += smiley
+                this += bombCount
+            }
+        )
 
         this += grid
 
@@ -111,7 +169,7 @@ class Minesweeper : View("Minesweeper"), ClickListener {
 
     private fun newGame(size: Int) {
         val scope = Scope()
-        setInScope(MinesweeperModel(Game.createNewGame(size, size / 2)), scope)
+        setInScope(MinesweeperModel(Game.createNewGame(size, (size * 2))), scope)
         onCloseHandle {
             find<Minesweeper>(scope).openWindow(resizable = false, owner = null)
         }
@@ -122,15 +180,25 @@ class Minesweeper : View("Minesweeper"), ClickListener {
         grid.render(controller.getDomain())
 
         if(controller.getDomain().isGameOver()) {
-            if(controller.getDomain().hasWon())
-                alert(Alert.AlertType.CONFIRMATION, "You won!")
-            else
-                alert(Alert.AlertType.ERROR, "You loose!")
+            if(controller.getDomain().hasWon()) {
+                smiley.text = "\uF004"
+
+                smiley.style(true) {
+                    textFill = Color.RED
+                }
+            }
+            else {
+                smiley.text = "\uF119"
+
+                smiley.style(true) {
+                    textFill = AppColor.BOMB
+                }
+            }
         }
     }
 
     fun onCloseHandle(callback: () -> Unit = {}) { //TODO: figure out weird javaFX event handlers
-        if(!controller.getDomain().isGameOver()) { //TODO: messy code!!!
+        if(!controller.getDomain().isGameOver() || controller.getDomain().hasWon()) { //TODO: messy code!!!
             alert(Alert.AlertType.WARNING, "Save progress", "Do you want to save your progress?", ButtonType.CANCEL, ButtonType.NO, ButtonType.YES) { type ->
                 var success = true
                 if (type == ButtonType.NO)

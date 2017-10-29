@@ -12,7 +12,9 @@ class SetUtil private constructor() {
         fun helper(amount: Int, coordinates: Set<Coordinate> = setOf()): Set<Coordinate> {
             val coordinate = Coordinate(Int.random(lower, upper - 1), Int.random(lower, upper - 1))
 
-            if(coordinates.contains(coordinate))
+            if(coordinates.contains(coordinate) ||
+                    coordinate == Coordinate(0, 0) || coordinate == Coordinate(upper - 1, 0) ||
+                    coordinate == Coordinate(upper - 1, upper - 1) || coordinate == Coordinate(0, upper - 1))
                 return helper(amount, coordinates) //If on the current position the bomb exists
             else if(amount == 0)
                 return (coordinates + coordinate) //If there is no more coordinates to add

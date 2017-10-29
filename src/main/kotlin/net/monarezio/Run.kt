@@ -21,7 +21,7 @@ class Run: App(Minesweeper::class) {
 
     init {
         Font.loadFont(Run::class.java.getResource("/fonts/FontAwesome.otf").toExternalForm(), 10.0)
-        setInScope(MinesweeperModel(Game.createNewGame(10, 5)), DefaultScope)
+        setInScope(MinesweeperModel(Game.createNewGame(10, (10 * 2).toInt())), DefaultScope)
     }
 
     companion object {
