@@ -21,10 +21,6 @@ class Run: App(Minesweeper::class) {
     }
 
     init {
-
-
-        println(File("resources/fonts/FontAwesome.otf").absolutePath)
-
         Font.loadFont("file:" + File("resources/fonts/FontAwesome.otf").path, 10.0)
         setInScope(MinesweeperModel(Game.createNewGame(10, (10 * 2).toInt())), DefaultScope)
     }
