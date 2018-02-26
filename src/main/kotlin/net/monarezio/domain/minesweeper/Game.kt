@@ -40,6 +40,10 @@ class Game private constructor(
             if(isInFieldAndIsHidden(x - 1, y)) tmpGame = tmpGame.move(x - 1, y)
             if(isInFieldAndIsHidden(x, y + 1)) tmpGame = tmpGame.move(x, y + 1)
             if(isInFieldAndIsHidden(x, y - 1)) tmpGame = tmpGame.move(x, y - 1)
+            if(isInFieldAndIsHidden(x - 1, y - 1)) tmpGame = tmpGame.move(x - 1, y - 1)
+            if(isInFieldAndIsHidden(x + 1, y - 1)) tmpGame = tmpGame.move(x + 1, y - 1)
+            if(isInFieldAndIsHidden(x + 1, y + 1)) tmpGame = tmpGame.move(x + 1, y + 1)
+            if(isInFieldAndIsHidden(x - 1, y + 1)) tmpGame = tmpGame.move(x - 1, y + 1)
         }
         return tmpGame
     }
